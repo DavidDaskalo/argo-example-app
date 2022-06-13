@@ -1,1 +1,9 @@
-
+spec:
+  destination:
+    server: "https://api.restore-test.cloudlet-dev.com:6443"
+    namespace: "argo-to-argo-app"
+  source:
+    repoURL: https://github.com/DavidDaskalo/argo-example-app
+    targetRevision: HEAD
+  project: default
+argocdNamespace: argocd-sample
