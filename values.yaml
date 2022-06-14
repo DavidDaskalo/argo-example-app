@@ -3,7 +3,7 @@ spec:
     server: "https://kubernetes.default.svc"
     namespace: "argo-to-argo-app"
   source:
-    repoURL: https://github.com/DavidDaskalo/argo-example-app
+    repoURL: https://gitlab.com/yoavgit/ymhfmanifests
     targetRevision: HEAD
   project: default
 argocdNamespace: openshift-gitops
