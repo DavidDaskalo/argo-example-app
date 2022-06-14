@@ -2,10 +2,10 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-to-argo-app-{{ template "cluster_name" . }}
-  namespace: {{ .Values.argocdNamespace }}
+  namespace: openshift-gitops
 spec:
   destination:
-    namespace: {{ .Values.spec.destination.namespace }}
+    namespace: openshift-gitops
     server: {{ .Values.spec.destination.server }}
   project: {{ .Values.spec.project }}
   source:
